@@ -238,31 +238,33 @@ body {
     /* Animation setup */
     max-height: 0;
     opacity: 0;
-    overflow: hidden;
+    overflow: hidden;   /* hides when closed */
     transition: max-height 0.3s ease, opacity 0.3s ease;
+    display: flex;      /* <-- make sure it's flex by default */
   }
 
   .nav-links.active {
-    max-height: 500px; /* enough space for menu items */
+    max-height: 500px; /* enough room for all items */
     opacity: 1;
   }
 
   .nav-links li {
     margin: 0.5rem 0;
+    list-style: none;
   }
 
   .nav-links a {
+    display: block;
     color: #005baa;
     font-weight: 600;
     text-decoration: none;
+    padding: 0.5rem 0;
   }
 
   .nav-links a:hover {
     color: #007BFF;
   }
 }
-
-
 
   .nav-links li {
     margin: 0.5rem 0;
