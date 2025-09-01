@@ -438,7 +438,7 @@ body {
 
 .testimonial-carousel {
     position: relative;
-    overflow: visible;
+    overflow: hidden;
 }
 
 .testimonial-track {
