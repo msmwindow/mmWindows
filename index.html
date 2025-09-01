@@ -220,68 +220,65 @@
       </div>
     </footer>
 
-
     <script>
+      // Form submission
       document.getElementById('booking-form').addEventListener('submit', function(e) {
-      // Show thank-you alert
-      alert('Thank you for your booking! We will contact you soon to confirm.');
-      // Allow the form to submit normally (remove e.preventDefault)
-
-
-        const hamburger = document.querySelector(".hamburger");
-        const navLinks = document.querySelector(".nav-links");
-
-        hamburger.addEventListener("click", () => {
+          alert('Thank you for your booking! We will contact you soon to confirm.');
+          // No e.preventDefault(), so Formspree handles submission
+      });
+    
+      // Hamburger menu
+      const hamburger = document.querySelector(".hamburger");
+      const navLinks = document.querySelector(".nav-links");
+    
+      hamburger.addEventListener("click", () => {
         navLinks.classList.toggle("active");
-        });
-
-        
-    document.addEventListener('DOMContentLoaded', () => {
+      });
+    
+      // Testimonials carousel
+      document.addEventListener('DOMContentLoaded', () => {
         const track = document.querySelector('.testimonial-track');
         const prevBtn = document.querySelector('.carousel-btn.prev');
         const nextBtn = document.querySelector('.carousel-btn.next');
         const slides = Array.from(track.children);
-
         let currentIndex = 0;
-
+      
         function getSlidesToShow() {
-            return window.innerWidth >= 769 ? 3 : 1; // desktop shows 3, mobile 1
+            return window.innerWidth >= 769 ? 3 : 1;
         }
-
+      
         function updateCarousel() {
             const slidesToShow = getSlidesToShow();
             const slideWidth = slides[0].getBoundingClientRect().width;
             const gap = parseInt(window.getComputedStyle(track).gap) || 0;
             track.style.transform = `translateX(-${currentIndex * (slideWidth + gap)}px)`;
         }
-
+      
         nextBtn.addEventListener('click', () => {
             const slidesToShow = getSlidesToShow();
             currentIndex = (currentIndex + 1) % slides.length;
             if(currentIndex > slides.length - slidesToShow) currentIndex = 0;
             updateCarousel();
         });
-
+      
         prevBtn.addEventListener('click', () => {
             const slidesToShow = getSlidesToShow();
             currentIndex = (currentIndex - 1 + slides.length) % slides.length;
             if(currentIndex > slides.length - slidesToShow) currentIndex = slides.length - slidesToShow;
             updateCarousel();
         });
-
-        // Auto-scroll every 5 seconds
+      
         setInterval(() => {
             const slidesToShow = getSlidesToShow();
             currentIndex = (currentIndex + 1) % slides.length;
             if(currentIndex > slides.length - slidesToShow) currentIndex = 0;
             updateCarousel();
         }, 5000);
-
+      
         window.addEventListener('resize', updateCarousel);
-
-        // Initialize
         updateCarousel();
-});
-    </script>
+      });
+  </script>
+
 </body>
 </html>
