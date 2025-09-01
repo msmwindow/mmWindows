@@ -220,24 +220,44 @@ body {
 /* Responsive behavior */
 @media (max-width: 768px) {
   .nav-links {
-    position: fixed;
-    top: 60px;
-    right: -100%;
-    height: calc(100% - 60px);
-    width: 200px;
-    background: rgba(0, 74, 173, 0.95);
+    display: none;
     flex-direction: column;
-    padding: 20px;
-    gap: 30px;
-    transition: right 0.3s ease;
+    position: absolute;
+    top: 70px; /* right below navbar */
+    right: 20px;
+    background: #ffffff; /* solid background */
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    width: 220px;
+    z-index: 9999; /* ensures it sits on top */
   }
 
-  .nav-links.active {
-    right: 0;
+  .nav-links li {
+    margin: 0.5rem 0;
   }
 
-  .hamburger {
+  .nav-links a {
+    color: #005baa; /* match site’s blue */
+    text-decoration: none;
+    font-weight: 600;
+  }
+
+  .nav-links a:hover {
+    color: #007BFF;
+  }
+
+  .nav-links.show {
     display: flex;
+  }
+
+  .menu-toggle {
+    display: block;
+    background: none;
+    border: none;
+    font-size: 2rem;
+    color: #005baa; /* matches theme */
+    cursor: pointer;
   }
 }
 
