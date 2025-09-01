@@ -6,121 +6,224 @@
     <title>MM Windows</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <header>
-        <h1>MM Windows</h1>
-        <p>Crystal Clear Window Cleaning Services</p>
-        <img src="./photos/hero-image.jpeg" alt="hero-image">
+
+    <header class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+          <h1>Crystal Clear Windows, Every Time</h1>
+          <p>Professional window cleaning in Fresno County</p>
+          <div class="hero-buttons">
+            <a href="#booking" class="btn btn-primary">Book Now</a>
+            <a href="#services" class="btn btn-secondary">View Services</a>
+          </div>
+        </div>
+        <img src="./photos/hero-image.jpeg" alt="Window cleaning" class="hero-image">
     </header>
 
-    <nav>
-        <ul>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#pricing">Pricing</a></li>
-            <li><a href="#testimonials">Testimonials</a></li>
-            <li><a href="#booking">Book Now</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
+    <nav class="navbar">
+     <div class="nav-container">
+       <a href="#" class="logo">MM Windows</a>
+       <ul class="nav-links">
+         <li><a href="#services">Services</a></li>
+         <li><a href="#pricing">Pricing</a></li>
+         <li><a href="#testimonials">Testimonials</a></li>
+         <li><a href="#booking" class="btn-nav">Book Now</a></li>
+         <li><a href="#contact">Contact</a></li>
+       </ul>
+       <div class="hamburger">
+         <span></span>
+         <span></span>
+         <span></span>
+       </div>
+     </div>
     </nav>
 
-    <section id="services">
-        <h2>Our Services</h2>
-        <div class="service-grid">
-            <div class="service-card">
-                <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c" alt="Residential Cleaning">
-                <h3>Residential Cleaning</h3>
-                <p>Keep your home sparkling clean with our thorough window cleaning services for all types of homes.</p>
-            </div>
-            <div class="service-card">
-                <img src="https://images.unsplash.com/photo-1486328228599-85db4443971f" alt="Commercial Window Cleaning">
-                <h3>Commercial Cleaning</h3>
-                <p>Professional window cleaning for businesses, ensuring a polished look for your storefront or office.</p>
-            </div>
-            <!-- <div class="service-card">
-                <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c" alt="High-Rise Cleaning">
-                <h3>Commercial Cleaning</h3>
-                <p>Specialized cleaning for multi-story buildings with safety and precision.</p>
-            </div> -->
+    <section id="services" class="services-section">
+      <h2>Our Services</h2>
+      <div class="services-grid">
+        <div class="service-card">
+          <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c" alt="Residential Cleaning">
+          <div class="service-content">
+            <h3>Residential Cleaning</h3>
+            <p>Keep your home sparkling clean with our thorough window cleaning for all home types.</p>
+            <a href="#booking" class="btn btn-service">Book Now</a>
+          </div>
         </div>
+
+        <div class="service-card">
+          <img src="./photos/commercial-img.JPG" alt="Commercial Window Cleaning">
+          <div class="service-content">
+            <h3>Commercial Cleaning</h3>
+            <p>Professional cleaning for businesses, ensuring a polished look for your office or storefront.</p>
+            <a href="#booking" class="btn btn-service">Book Now</a>
+          </div>
+        </div>
+
+        <div class="service-card">
+          <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c" alt="Custom Cleaning">
+          <div class="service-content">
+            <h3>Custom Cleaning</h3>
+            <p>Other cleaning services? Get a custom quote tailored to your needs.</p>
+            <a href="#contact" class="btn btn-service">Get Quote</a>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <section id="pricing">
-        <h2>Initial Pricing</h2>
-        <div class="pricing-grid">
-            <div class="pricing-card">
-                <h3>Basic Package</h3>
-                <p>Single-story home, up to 15 windows</p>
-                <p><strong>$125</strong></p>
-                <a href="#booking" class="btn">Book Now</a>
-            </div>
-            <div class="pricing-card">
-                <h3>Standard Package</h3>
-                <p>Two-story home, up to 25 windows</p>
-                <p><strong>$225</strong></p>
-                <a href="#booking" class="btn">Book Now</a>
-            </div>
-            <div class="pricing-card">
-                <h3>Custom Cleaning</h3>
-                <p>Other cleaning services, custom quote</p>
-                <p><strong>Contact Us</strong></p>
-                <a href="#contact" class="btn">Get Quote</a>
-            </div>
+    <section id="pricing" class="pricing-section">
+      <h2>Initial Pricing</h2>
+      <div class="pricing-grid">
+        <div class="pricing-card">
+          <h3>Basic Package</h3>
+          <p>Single-story home, up to 15 windows</p>
+          <p class="price"><strong>$125</strong></p>
+          <a href="#booking" class="btn btn-service">Book Now</a>
         </div>
+
+        <div class="pricing-card popular">
+          <h3>Standard Package</h3>
+          <p>Two-story home, up to 25 windows</p>
+          <p class="price"><strong>$225</strong></p>
+          <a href="#booking" class="btn btn-service">Book Now</a>
+          <span class="badge">Most Popular</span>
+        </div>
+
+        <div class="pricing-card">
+          <h3>Custom Cleaning</h3>
+          <p>Other cleaning services, custom quote</p>
+          <p class="price"><strong>Contact Us</strong></p>
+          <a href="#contact" class="btn btn-service">Get Quote</a>
+        </div>
+      </div>
     </section>
 
-    <section id="testimonials">
+
+    <section id="testimonials" class="testimonials-section">
         <h2>What Our Customers Say</h2>
-        <div class="testimonial-grid">
-            <div class="testimonial-card">
-                <h3>Jane D.</h3>
-                <p class="quote">"MM Windows transformed the look of my home! The windows are spotless, and the team was so professional."</p>
-                <p>Residential Client</p>
+        <div class="testimonial-carousel">
+            <div class="testimonial-track">
+                <div class="testimonial-card">
+                    <p class="quote">"MM Windows transformed the look of my home! The windows are spotless, and the team was so professional."</p>
+                    <h3>Jane D.</h3>
+                    <p class="role">Residential Client</p>
+                </div>
+
+                <div class="testimonial-card">
+                    <p class="quote">"Our office windows have never looked better. MM Windows is reliable and worth every penny!"</p>
+                    <h3>Mike S.</h3>
+                    <p class="role">Commercial Client</p>
+                </div>
+
+                <div class="testimonial-card">
+                    <p class="quote">"The high-rise cleaning was done with such care and precision. Highly recommend MM Windows!"</p>
+                    <h3>Sarah L.</h3>
+                    <p class="role">Property Manager</p>
+                </div>
+
+                <div class="testimonial-card">
+                    <p class="quote">"Fantastic service! The team arrived on time, and my windows have never looked better."</p>
+                    <h3>Emily R.</h3>
+                    <p class="role">Residential Client</p>
+                </div>
+
+                <div class="testimonial-card">
+                    <p class="quote">"MM Windows exceeded our expectations. Our storefront now shines and attracts more customers!"</p>
+                    <h3>David P.</h3>
+                    <p class="role">Business Owner</p>
+                </div>
+
+                <div class="testimonial-card">
+                    <p class="quote">"I was impressed with their attention to detail. Every window in my apartment is spotless."</p>
+                    <h3>Sophia L.</h3>
+                    <p class="role">Apartment Resident</p>
+                </div>
+
+                <div class="testimonial-card">
+                    <p class="quote">"Quick, professional, and affordable. I highly recommend MM Windows for any home cleaning."</p>
+                    <h3>James K.</h3>
+                    <p class="role">Residential Client</p>
+                </div>
+
+                <div class="testimonial-card">
+                    <p class="quote">"They handled our high-rise office windows safely and efficiently. Great team!"</p>
+                    <h3>Olivia M.</h3>
+                    <p class="role">Property Manager</p>
+                </div>
+
+                <div class="testimonial-card">
+                    <p class="quote">"Custom cleaning service was exactly what we needed for our tricky windows. Perfect results!"</p>
+                    <h3>Mark T.</h3>
+                    <p class="role">Residential Client</p>
+                </div>
             </div>
-            <div class="testimonial-card">
-                <h3>Mike S.</h3>
-                <p class="quote">"Our office windows have never looked better. MM Windows is reliable and worth every penny!"</p>
-                <p>Commercial Client</p>
-            </div>
-            <div class="testimonial-card">
-                <h3>Sarah L.</h3>
-                <p class="quote">"The high-rise cleaning was done with such care and precision. Highly recommend MM Windows!"</p>
-                <p>Property Manager</p>
-            </div>
+
+            <!-- Carousel buttons -->
+            <button class="carousel-btn prev">&#10094;</button>
+            <button class="carousel-btn next">&#10095;</button>
         </div>
     </section>
+
+
 
     <section id="booking">
-        <h2>Book Your Appointment</h2>
-        <form id="booking-form">
-            <input type="text" name="name" placeholder="Full Name" required>
-            <input type="email" name="email" placeholder="Email" required>
-            <input type="tel" name="phone" placeholder="Phone Number" required>
-            <select name="service" required>
-                <option value="" disabled selected>Select Service</option>
-                <option value="basic">Basic Package</option>
-                <option value="standard">Standard Package</option>
-                <option value="premium">Custom Cleaning</option>
-            </select>
-            <input type="date" name="date" required>
-            <textarea name="message" placeholder="Additional Notes" rows="5"></textarea>
-            <button type="submit">Submit Booking</button>
-        </form>
+      <h2>Book Your Appointment</h2>
+      <form id="booking-form" action="https://formspree.io/f/mwpnbdeb" method="POST">
+          <input type="text" name="name" placeholder="Full Name" required>
+          <input type="email" name="email" placeholder="Email" required>
+          <input type="tel" name="phone" placeholder="Phone Number" required>
+
+          <select name="service" required>
+              <option value="" disabled selected>Select Service</option>
+              <option value="basic">Basic Package</option>
+              <option value="standard">Standard Package</option>
+              <option value="premium">Custom Cleaning</option>
+          </select>
+
+          <input type="date" name="date" required>
+          <textarea name="message" placeholder="Additional Notes" rows="5"></textarea>
+
+          <!-- Honeypot anti-spam -->
+          <input type="text" name="_gotcha" style="display:none">
+
+          <!-- Redirect after submit -->
+          <input type="hidden" name="_redirect" value="https://yourwebsite.com/thank-you">
+
+          <button type="submit">Submit Booking</button>
+      </form>
     </section>
 
     <section id="contact">
-        <h2>Contact Us</h2>
-        <div class="contact-card">
-        <p>Name: Michael Munro</p>
-        <p>Email: msmwindow@gmail.com</p>
-        <p>Phone: (310) 971-6914</p>
-        <p>Servicing Area: Fresno County</p>
+      <h2>Contact Us</h2>
+      <div class="contact-card">
+        <div class="contact-item">
+          <span class="contact-icon">👤</span>
+          <p>Michael Munro</p>
         </div>
+        <div class="contact-item">
+          <span class="contact-icon">📧</span>
+          <a href="mailto:msmwindow@gmail.com">msmwindow@gmail.com</a>
+        </div>
+        <div class="contact-item">
+          <span class="contact-icon">📞</span>
+          <a href="tel:+13109716914">(310) 971-6914</a>
+        </div>
+        <div class="contact-item">
+          <span class="contact-icon">📍</span>
+          <p>Servicing Fresno County</p>
+        </div>
+      </div>
     </section>
 
+
     <footer>
+      <div class="footer-container">
         <p>© 2025 MM Windows. All rights reserved.</p>
         <p>Designed for clarity and shine.</p>
+      </div>
     </footer>
+
 
     <script>
         document.getElementById('booking-form').addEventListener('submit', function(e) {
@@ -128,6 +231,61 @@
             alert('Thank you for your booking! We will contact you soon to confirm.');
             this.reset();
         });
+
+        const hamburger = document.querySelector(".hamburger");
+        const navLinks = document.querySelector(".nav-links");
+
+        hamburger.addEventListener("click", () => {
+        navLinks.classList.toggle("active");
+        });
+
+        
+    document.addEventListener('DOMContentLoaded', () => {
+        const track = document.querySelector('.testimonial-track');
+        const prevBtn = document.querySelector('.carousel-btn.prev');
+        const nextBtn = document.querySelector('.carousel-btn.next');
+        const slides = Array.from(track.children);
+
+        let currentIndex = 0;
+
+        function getSlidesToShow() {
+            return window.innerWidth >= 769 ? 3 : 1; // desktop shows 3, mobile 1
+        }
+
+        function updateCarousel() {
+            const slidesToShow = getSlidesToShow();
+            const slideWidth = slides[0].getBoundingClientRect().width;
+            const gap = parseInt(window.getComputedStyle(track).gap) || 0;
+            track.style.transform = `translateX(-${currentIndex * (slideWidth + gap)}px)`;
+        }
+
+        nextBtn.addEventListener('click', () => {
+            const slidesToShow = getSlidesToShow();
+            currentIndex = (currentIndex + 1) % slides.length;
+            if(currentIndex > slides.length - slidesToShow) currentIndex = 0;
+            updateCarousel();
+        });
+
+        prevBtn.addEventListener('click', () => {
+            const slidesToShow = getSlidesToShow();
+            currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+            if(currentIndex > slides.length - slidesToShow) currentIndex = slides.length - slidesToShow;
+            updateCarousel();
+        });
+
+        // Auto-scroll every 5 seconds
+        setInterval(() => {
+            const slidesToShow = getSlidesToShow();
+            currentIndex = (currentIndex + 1) % slides.length;
+            if(currentIndex > slides.length - slidesToShow) currentIndex = 0;
+            updateCarousel();
+        }, 5000);
+
+        window.addEventListener('resize', updateCarousel);
+
+        // Initialize
+        updateCarousel();
+});
     </script>
 </body>
 </html>
